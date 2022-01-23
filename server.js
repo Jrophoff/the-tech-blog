@@ -14,7 +14,7 @@ const sess = {
   secret: 'Super secret secret',
   cookie: {},
   resave: false,
-  saveUnititalized: true,
+  saveUninitialized: true,
   store: new sequelizeStore({
     db: sequelize,
   }),
