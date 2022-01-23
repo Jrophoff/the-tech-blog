@@ -12,7 +12,7 @@ const sequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const sess = {
   secret: 'Super secret secret',
-  cookie: {},
+  cookie: { maxAge: 3000 },
   resave: false,
   saveUninitialized: true,
   store: new sequelizeStore({
@@ -31,8 +31,6 @@ app.set('view engine', 'handlebars');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
-
-
 
 // turn on routes
 app.use(require('./controllers/'));
