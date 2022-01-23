@@ -1,21 +1,21 @@
 {{> post-info post}}
 
-{{> comments post.comments}}
-
 {{#if loggedIn}}
-<div class="form-div">
-<form class="comment-form">
-    <div>
+<div class="comment-form mx-5 my-3">
+<form>
+    <div class="my-3">
         <textarea name="comment-body"></textarea>
     </div>
 
     <div>
-        <button type="submit">add comment</button>
-        <button type="button" class="upvote-btn">upvote</button>
+        <button type="submit" class='btn btn-primary'>add comment</button>
+        <button type="button" class="upvote-btn btn btn-success">upvote</button>
     </div>
 </form>
 </div>
 {{/if}}
+
+{{> comments post.comments}}
 
 {{#if loggedIn}}
 <script src="/javascript/comment.js"></script>

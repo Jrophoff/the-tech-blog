@@ -1,10 +1,10 @@
-<section class="form-div">
-    <form class="new-post-form">
-        <h3>Share A Recipe</h3>
-            <label for="post-title">Dish Name</label>
-            <input type="text" id="post-title" name="post-title" />
-            <textarea name="post-body"></textarea>
-        <button type="submit">Share</button>
+<section class="mx-5">
+    <form class='new-post-form'>
+        <h3>Share A Post</h3>
+            <label for="post-title" class='form-label my-3 fs-4'>Post Title</label>
+            <input type="text" id="post-title" name="post-title" class="form-control form-control-s mb-3" />
+            <textarea name="post-body"class='form-control mb-3' rows="10"></textarea>
+        <button type="submit" class='btn btn-primary'>Share</button>
     </form>
 </section>
 {{#if posts.length}}
@@ -12,12 +12,12 @@
 <section class ="form-div">
     
 
-       <div class = "card">
+       <div class = "card mx-5">
            <div class="card-header"> <h3> {{title}}</h3> </div>
            <div class="card-body">
               <p class="card-text">{{post_body}}</p>
               
-              <a href="/dashboard/edit/{{post.id}}" class="edit-link"><button type="submit">Edit post</button></a>
+              <a href="/dashboard/edit/{{post.id}}"><button type="submit" class='btn btn-primary'>Edit post</button></a>
               </div>
               <div class="card-footer">
       <small class="text-muted">Author: {{user.username}} on {{format_date created_at}} {{vote_count}} {{format_plural "Upvote" vote_count}}
