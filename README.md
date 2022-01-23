@@ -10,9 +10,6 @@
 - [Usage](#usage)
 - [Screenshot](#screenshot)
 - [Link](#link)
-- [Questions](#questions)
-    - [GitHub](#github)
-    - [Email](#email)
 - [License](#license)
 
 ## Description
@@ -29,15 +26,7 @@
 
 ## Link
 
-https://blooming-sierra-74075.herokuapp.com/dashboard
-
-## Questions
-#### If you have further questions please reach out via GitHub or Email.
-### GitHub:
-#### <a href="https://github.com/jrophoff">Github</a>
-
-### Email:
-#### jrophoff@gmail.com
+https://blooming-sierra-74075.herokuapp.com/
 
 ## License
 
